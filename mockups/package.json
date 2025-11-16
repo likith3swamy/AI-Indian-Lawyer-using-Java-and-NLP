@@ -1,0 +1,14 @@
+{
+  "name": "ail-mockups",
+  "version": "1.0.0",
+  "description": "Mockup pages for AI Indian Lawyer and screenshot capture script",
+  "main": "capture.js",
+  "scripts": {
+    "capture": "node capture.js"
+  },
+  "author": "AIL-mockup",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^20.9.0"
+  }
+}

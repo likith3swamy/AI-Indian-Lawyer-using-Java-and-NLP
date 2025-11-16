@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Indian Lawyer — Ingest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">AI Indian Lawyer (AIL)</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="query.html">Ask</a>
+      <a href="ingest.html" class="active">Ingest</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Upload Document</h2>
+      <form class="upload">
+        <label>Document title</label>
+        <input type="text" placeholder="Constitution of India (Bare Act)" />
+        <label>File</label>
+        <input type="file" disabled />
+        <small class="hint">This mockup does not perform an actual upload. Use the API ingest endpoint to upload real files.</small>
+        <div class="actions">
+          <button disabled>Upload & Index</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card wide">
+      <h2>Last Indexed Chunks</h2>
+      <table class="table">
+        <thead><tr><th>Chunk ID</th><th>Doc</th><th>Preview</th><th>Score</th></tr></thead>
+        <tbody>
+          <tr><td>c-20251114-001</td><td>constitution</td><td>Article 14: The State shall not deny ...</td><td>0.92</td></tr>
+          <tr><td>c-20251114-002</td><td>constitution</td><td>Article 21: No person shall be deprived ...</td><td>0.89</td></tr>
+          <tr><td>c-20251114-003</td><td>judgment_royappa</td><td>Equality is not a mechanical concept ...</td><td>0.86</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">Ingest pipeline — chunking • embedding • index</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Indian Lawyer — Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">AI Indian Lawyer (AIL)</div>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="query.html">Ask</a>
+      <a href="ingest.html">Ingest</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <div class="card">
+        <h3>Total Documents</h3>
+        <p class="stat">1,248</p>
+      </div>
+      <div class="card">
+        <h3>Indexed Chunks</h3>
+        <p class="stat">18,432</p>
+      </div>
+      <div class="card">
+        <h3>Queries Today</h3>
+        <p class="stat">326</p>
+      </div>
+      <div class="card">
+        <h3>Avg Confidence</h3>
+        <p class="stat">87%</p>
+      </div>
+    </section>
+
+    <section class="card wide">
+      <h2>Recent Queries</h2>
+      <ul class="list">
+        <li><strong>What is the scope of Article 14?</strong> — 2025-11-14 — <span class="label">Answered</span></li>
+        <li><strong>Can Fundamental Rights be suspended?</strong> — 2025-11-14 — <span class="label warning">Review</span></li>
+        <li><strong>What counts as 'reasonable restriction'?</strong> — 2025-11-13 — <span class="label">Answered</span></li>
+      </ul>
+    </section>
+
+    <section class="card wide">
+      <h2>System Health</h2>
+      <div class="cols">
+        <div><strong>Elasticsearch:</strong> Running</div>
+        <div><strong>Postgres:</strong> Running</div>
+        <div><strong>Embedding API:</strong> Connected</div>
+        <div><strong>Drools:</strong> Loaded (12 rules)</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">AIL prototype • Not a substitute for legal advice</footer>
+</body>
+</html>

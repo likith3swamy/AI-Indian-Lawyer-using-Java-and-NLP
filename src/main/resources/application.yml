@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ail
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+ail:
+  embeddings:
+    provider: openai  # options: openai | local
+    openai:
+      apiKey: "${OPENAI_API_KEY:}"
+      endpoint: "https://api.openai.com/v1"
+  vector:
+    provider: elasticsearch
+    elastic:
+      host: http://localhost:9200
+      index: ail_chunks
+  llm:
+    provider: openai
+    openai:
+      model: gpt-4o-mini  # example; choose appropriate model

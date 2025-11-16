@@ -1,0 +1,16 @@
+// Sample Drools rules for constitutional reasoning.
+// Real rules must be authored with legal expertise and thoroughly tested.
+package rules;
+
+global java.lang.String question;
+
+rule "Article14-EqualProtectionScope"
+when
+    // in real usage, facts would be parsed objects
+    $chunks : java.util.List() from entry-point "chunks"
+    eval($chunks.stream().anyMatch(c -> ((java.util.Map)c).get("text") != null &&
+         ((String)((java.util.Map)c).get("text")).toLowerCase().contains("article 14")))
+then
+    System.out.println("Rule fired: Article14-EqualProtectionScope for question: " + question);
+    // insert structured facts into the working memory or set globals (omitted)
+end

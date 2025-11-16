@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Indian Lawyer — Ask</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">AI Indian Lawyer (AIL)</div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="query.html" class="active">Ask</a>
+      <a href="ingest.html">Ingest</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card question">
+      <h2>Your Question</h2>
+      <div class="question-box">What is the scope of Article 14 of the Indian Constitution and how has the judiciary interpreted "equality before the law"?</div>
+    </section>
+
+    <section class="card answer">
+      <h2>AIL Answer</h2>
+      <p class="lead">Summary:</p>
+      <p>Article 14 guarantees equality before the law and equal protection of the laws. The judiciary has interpreted Article 14 to prohibit class legislation and to require reasonable classification: (1) classification must be based on an intelligible differentia, and (2) differentia must have a rational relation to the object sought to be achieved.</p>
+
+      <div class="meta">
+        <div><strong>Confidence:</strong> 0.84</div>
+        <div><strong>Rule firings:</strong> Article14-EqualProtectionScope, Classification-Test</div>
+      </div>
+
+      <h3>Key Passages (sources)</h3>
+      <ol class="sources">
+        <li><strong>Constitution — Article 14</strong><br/><em>"The State shall not deny to any person equality before the law or the equal protection of the laws."</em></li>
+        <li><strong>Judgment — State of West Bengal v. Anwar Ali Sarkar (1952)</strong><br/><em>Established tests for classification and equality.</em></li>
+        <li><strong>Judgment — E. P. Royappa (1973)</strong><br/><em>Expanded concept of equality beyond formal equality.</em></li>
+      </ol>
+    </section>
+
+    <section class="card evidence">
+      <h3>Rule Evidence</h3>
+      <pre>{
+  "firedRules": [
+    "Article14-EqualProtectionScope",
+    "Classification-Test"
+  ],
+  "notes": "Classification must satisfy intelligible differentia + rational nexus"
+}</pre>
+    </section>
+  </main>
+
+  <footer class="footer">AIL — Answer includes cited passages and rule evidence</footer>
+</body>
+</html>
