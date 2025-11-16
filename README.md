@@ -37,3 +37,7 @@ Security
 - Audit all queries & rule firings
 
 See ARCHITECTURE.md for design details and EXTENDING.md for next steps.
+##RESULTS
+![Project](result1.png)
+![Project](result2.png)
+![Project](result3.png)
